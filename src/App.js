@@ -1,24 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+import MuiAppBar from './components/MuiAppBar'
+import Game from './components/Game';
+import Generate from './components/Generate';
+import Home from './components/Home';
+import HardAcc from './components/hardacc';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#000000"
+    },
+    secondary: {
+      main: "#FFFFFF"
+    }
+  }
+});
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <MuiAppBar/>
+      <Routes>
+          <Route path="worlds/" element={<Home />}/>
+          <Route path="worlds/generate/" element={<Generate/>} />
+          <Route path="worlds/game/" element={<Game />} />
+          <Route path="worlds/hardacc/" element={<HardAcc />} />
+      </Routes>
+    </BrowserRouter>
     </div>
+    </ThemeProvider>
   );
 }
 
