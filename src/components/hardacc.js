@@ -10,10 +10,10 @@ import "./hardacc.css"
 function HardAcc(){
     return(
         <div className="HardAcc">
-            <div className="Image" style={{ backgroundImage : "url(" + chrome + ")" }}></div>
-            <div className="Image" style={{ backgroundImage : "url(" + edge + ")" }}></div>
-            <div className="Image" style={{ backgroundImage : "url(" + firefox1 + ")" }}></div>
-            <div className="Image" style={{ backgroundImage : "url(" + firefox2 + ")" }}></div>
+            <div className="Image Chrome" ></div>
+            <div className="Image Edge" ></div>
+            <div className="Image Firefox1" ></div>
+            <div className="Image Firefox2" ></div>
         </div>
     )
 }

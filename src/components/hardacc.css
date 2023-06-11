@@ -17,3 +17,19 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.Chrome{
+    background-image: url(./images/chrome.png);
+}
+
+.Edge{
+    background-image: url(./images/edge.png);
+}
+
+.Firefox1{
+    background-image: url(./images/firefox1.png);
+}
+
+.Firefox2{
+    background-image: url(./images/firefox2.png);
+}
