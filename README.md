@@ -1,3 +1,14 @@
+# WORLDS
+## An AI backed procedural world generation engine for video game development.
+
+Video Intro : https://youtu.be/zuInOS5OUgU
+
+WORLDS is a Generative AI backed procedural world generation engine which accepts natural language input and converts it into a blueprint to generate a virtual world as per the user's requirement.
+
+Leveraging the power of Large Language Models (LLMS) and Generative Adverserial Networks (GAN), WORLDS will be capable of generating textures, models, NPC behaviour, etc in a diverse and case specific manner which will be unique to each world that is generated using the engine.
+
+Such an approach to game world generation will enable developers and users alike to develop a game world as per their vision and preferences, with reduced human effort and cost.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
