@@ -29,8 +29,8 @@ function Home()
 {
 
     const configuration = new Configuration({
-        organization: "org-SxNS8ihaKwDqdWQqeicoC3iS",
-        apiKey: "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",
+        organization: " ",
+        apiKey: " ",
       });
     
     const openai = new OpenAIApi(configuration);
